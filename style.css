@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    width: 50%;
+    background-color: white;
+    align-self: center;
+    display: block;
+    margin: 120px auto;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 5px 10px 20px black;
+}
+
+ul {
+    margin: 0;
+    border-left: 6px solid teal;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: whitesmoke;
+    font-size: 18px;
+    transition: 2s ;
+    user-select: none;
+
+}
+
+ul li:hover {
+    background-color: rosybrown;
+}
+
+ul li:nth-child(odd) {
+    background-color: rgb(101, 101, 101, 0.3);
+}
+
+ul li.checked {
+    background: rebeccapurple !important ;
+    color: white;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: "";
+    position: absolute;
+    border-color: blue;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 10px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 17px;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 10px 12px 10px;
+}
+
+.close:hover {
+    background-color: orange !important;
+    color: white;
+}
+
+.header {
+    background-color: teal;
+    padding: 30px 30px;
+    color: wheat;
+    text-align: center;
+}
+
+.header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+input{
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+.btn{
+    padding: 10px;
+    width: 25%;
+    background: purple ;
+    color: aquamarine;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 2s;
+    border-radius: 0;
+}
+.btn:hover{
+    background: beige ;
+    color: black;
+}
